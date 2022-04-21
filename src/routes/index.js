@@ -8,12 +8,12 @@ function getToken(id,secret,key){
     const usuarios =us.getUsers()
     // Para obtener los usuarion
 
-    usuarios.forEach(usuarios => {   // Para revisar uno por uno los usuarion
+    usuarios.forEach(usuarios => {   // Para revisar uno por uno los usuarios
        if(usuarios.id===id){
         console.log("El usuario efectivamente existe.")
         if(KEY===key && SECRET===secret){
                  console.log("Todos los parametros son correctos")
-                 token = objeto.getUUIDV4()
+                 token = objeto.getUUIDV4()  //Obtiene el token aleatorio luego de encontrar al usuario
                  console.log("Token:  ",token)
         }
         if(KEY!==key){
